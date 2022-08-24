@@ -1,0 +1,1131 @@
+/* Paleta de colores y fuente seleccionadas */
+:root{
+    --myBlue: #011627;
+    --myGray: #FDFFFC;
+    --myRed: #F71735;
+    --myBlueGreen: #41EAD4;
+    --myTitle: 'Bebas Neue', cursive;
+    --myText: 'Lato', sans-serif;
+}
+
+/* Normalización de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Permite controlar el tamaño de fuente en rem: 1rem = 10px y fondo de la página*/
+html{
+    font-size: 62.5%;
+    width: auto;
+    min-height: 100vh;
+    background-image: url('../assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: var(--myText);
+    overflow-x: hidden;
+}
+
+.html__views{
+    background-image: url('../assets/img/backgroud-views.svg');
+}
+
+/*===== ESTILOS BASE (MOBILE) =====*/
+
+/*===== ESTILOS NAV (MOBILE) =====*/
+
+.header__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo */
+.header__nav a{
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav a img{
+    width: 60%;
+    margin: 20px auto;
+    transition: all 0.5s;
+}
+
+.header__nav a img:hover{
+    transform: scale(1.1);
+}
+
+/* Barra de navegación */
+.header__nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: var(--myTitle);
+    width: 80%;
+}
+
+.header__nav ul li a{
+    text-decoration: none;
+    color: var(--myBlue);
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: all 0.5s;
+}
+
+.header__nav ul li{
+    padding: 5px;
+    border-bottom: 1px solid var(--myBlue);
+    margin: 0 5px;
+}
+
+.header__nav ul li a:hover{
+    background-color: var(--myBlue);
+    color: var(--myGray);
+}
+
+/*===== ESTILOS BANNER (MOBILE) =====*/
+
+/* Contenedor banner */
+.main__title{
+    display: flex;
+    height: 60vh;
+    width: 80%;
+    margin: 20px;
+}
+
+/* Contenedor banner páginas diferentes al index */
+.main__title-views{
+    height: 30vh;
+    width: 100%;
+}
+
+.main__title-views div{
+    width: 100%;
+    text-align: center;
+}
+
+/* Títulos */
+.main__title div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.main__title div h1{
+    font-family: var(--myTitle);
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.135em;
+    color: var(--myBlue);
+    text-shadow:
+        -1px    -1px    0   #FFFFFFFF,
+        0       -1px    0   #FFFFFFFF,
+        1px     -1px    0   #FFFFFFFF,
+        1px     0       0   #FFFFFFFF,
+        1px     1px     0   #FFFFFFFF,
+        0       1px     0   #FFFFFFFF,
+        -1px    1px     0   #FFFFFFFF,
+        -1px    0       0   #FFFFFFFF;
+}
+
+.main__title div h2{
+    font-family: var(--myText);
+    color: #FFFFFFFF;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-shadow:
+    -1px    -1px    0   var(--myBlue),
+    0       -1px    0   var(--myBlue),
+    1px     -1px    0   var(--myBlue),
+    1px     0       0   var(--myBlue),
+    1px     1px     0   var(--myBlue),
+    0       1px     0   var(--myBlue),
+    -1px    1px     0   var(--myBlue),
+    -1px    0       0   var(--myBlue);
+}
+
+/* Títulos de las páginas diferentes al index */
+.main__title-views div h1{
+    font-size: 10rem;
+}
+
+
+.main__title-views-long div h1{
+    font-size: 7rem;
+    margin: 0 10px;
+}
+
+.main__title div h2.main__title-views-back{
+    font-family: var(--myTitle);
+    font-style: normal;
+    position: absolute;
+    text-align: right;
+    font-size: 20rem;
+    right: 0;
+    opacity: 20%;
+    z-index: -1;
+    color: var(--myBlue);
+    text-shadow:
+        -1px    -1px    0   #FFFFFFFF,
+        0       -1px    0   #FFFFFFFF,
+        1px     -1px    0   #FFFFFFFF,
+        1px     0       0   #FFFFFFFF,
+        1px     1px     0   #FFFFFFFF,
+        0       1px     0   #FFFFFFFF,
+        -1px    1px     0   #FFFFFFFF,
+        -1px    0       0   #FFFFFFFF;
+}
+
+.main__title div h2.main__title-views-back-long{
+    font-size: 12rem;
+}
+
+/* Imagen banner index */
+.main__title-img{
+    position: absolute;
+    right: -10%;
+    width: 60%;
+    animation: change 5s infinite alternate;
+    z-index: -1;
+}
+
+.main__title-img-above{
+    display: none;
+}
+
+/* Animación imagen banner*/
+@keyframes change{
+    0% { transform: translateY(-20px); }
+}
+
+/*===== ESTILOS SECCIÓN PRINCIPAL (MOBILE) =====*/
+
+/* Contenedor productos + título + botón*/
+.main__products{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+/* Titulos seccion principal index */
+.main__products h2{
+    font-family: var(--myTitle);
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.135em;
+    color: var(--myBlue);
+    margin-bottom: 10px;
+}
+
+/* Elineación diferente para segundo título del index */
+.main__products-on-sale{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Contenedor todos los productos */
+.main__products-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Contenedor todos los productos en páginas diferentes al index */
+.main__products-container-views{
+    grid-row-gap: 50px;
+}
+
+/* Contenedor producto individual */
+.main__products-container article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main__products-container article img{
+    width: 90%;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.main__products-container article:hover img{
+    transform: scale(1.1);
+}
+
+/* Textos de cada producto */
+.main__products-container article h3{
+    margin-top: 3px;
+    text-align: center;
+    font-family: var(--myTitle);
+    font-size: 2rem;
+    color: var(--myBlue);
+    letter-spacing: 0.135em;
+}
+
+.main__products-container article h4{
+    font-family: var(--myText);
+    font-size: 1.5rem;
+    color: var(--myBlue);
+    margin-bottom: 5px;
+}
+
+.main__products-container article em,
+.main__products-container article strong{
+    font-size: 1.5rem;
+    color: var(--myBlue);
+}
+
+/* Botones "Ver más" */
+.main__button{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.main__button a{
+    background-image: linear-gradient(to bottom, var(--myBlue) , var(--myGray));
+    font-family: var(--myTitle);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--myGray);
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: var(--myBlue) solid 2px;
+    transition: all 0.5s;
+    color: var(--myBlue);
+    text-shadow:
+        -1px    -1px    0   #FFFFFFFF,
+        0       -1px    0   #FFFFFFFF,
+        1px     -1px    0   #FFFFFFFF,
+        1px     0       0   #FFFFFFFF,
+        1px     1px     0   #FFFFFFFF,
+        0       1px     0   #FFFFFFFF,
+        -1px    1px     0   #FFFFFFFF,
+        -1px    0       0   #FFFFFFFF;
+}
+
+.main__button a:hover{
+    opacity: 0.8;
+    background-image: linear-gradient(to top, var(--myBlue) , var(--myBlue));
+    color: var(--myGray);
+    text-shadow:
+        -1px    -1px    0   var(--myBlue),
+        0       -1px    0   var(--myBlue),
+        1px     -1px    0   var(--myBlue),
+        1px     0       0   var(--myBlue),
+        1px     1px     0   var(--myBlue),
+        0       1px     0   var(--myBlue),
+        -1px    1px     0   var(--myBlue),
+        -1px    0       0   var(--myBlue);
+}
+
+/*=====ESTILOS HR (MOBILE) =====*/
+hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    opacity: 0.5 !important;
+}
+
+/*===== ESTILOS MÉTODOS DE PAGO (MOBILE) =====*/
+.main__payment{
+    margin: 0 20px;
+}
+
+.main__payment-title h2{
+    font-family: var(--myTitle);
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.135em;
+    color: var(--myBlue);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main__payment-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.main__payment-icons img{
+    width: 80%;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.main__payment-icons img:hover{
+    transform: scale(1.1);
+}
+
+/*===== ESTILOS QUIÉNES SOMOS (MOBILE) =====*/
+
+/* Grid quienes somos */
+.main__about-us{
+    display: grid;
+    grid-template-areas:
+    "image"
+    "content";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__about-us img{
+    grid-area: image;
+    width: 100%;
+}
+
+.main__about-us div {
+    grid-area: content;
+}
+
+/* Texto quienes somos */
+.main__about-us div p{
+    font-family: var(--myText);
+    font-size: 1.5rem;
+    color: var(--myBlue);
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*===== ESTILOS CONTÁCTANOS (MOBILE)=====*/
+
+/* Grid form */
+.main__form{
+    display: grid;
+    grid-template-areas:
+    "reason"
+    "name"
+    "last-name"
+    "email"
+    "message"
+    "buttons";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__form-reason{
+    grid-area: reason;
+}
+
+.main__form-name{
+    grid-area: name;
+}
+
+.main__form-last-name{
+    grid-area: last-name;
+}
+
+.main__form-email{
+    grid-area: email;
+}
+
+.main__form-message{
+    grid-area: message;
+}
+
+.form__button{
+    grid-area: buttons;
+}
+
+/* Label + Input */
+.main__form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--myBlue);
+}
+
+/* Label form */
+.main__form div label{
+    margin-bottom: 5px;
+}
+
+/* Inputs form */
+.main__form div input,
+.main__form div select,
+.main__form div textarea{
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--myBlue) solid 1px;
+    color: var(--myBlue);
+    resize: none;
+}
+
+.main__form div input::placeholder,
+.main__form div select::placeholder,
+.main__form div textarea::placeholder{
+    color: var(--myBlue);
+    font-style: italic;
+    opacity: 80%;
+}
+
+.main__form div input:focus,
+.main__form div select:focus,
+.main__form div textarea:focus{
+    outline: none;
+    border: var(--myRed) solid 1px;
+}
+
+/* Botones form */
+div.form__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__button button{
+    margin: 10px;
+    width: 45%;
+    background-image: linear-gradient(to bottom, var(--myBlue) , var(--myGray));
+    font-family: var(--myTitle);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--myGray);
+    padding: 10px 0;
+    border-radius: 10px;
+    border: var(--myBlue) solid 2px;
+    transition: all 0.5s;
+    color: var(--myBlue);
+    text-shadow:
+        -1px    -1px    0   #FFFFFFFF,
+        0       -1px    0   #FFFFFFFF,
+        1px     -1px    0   #FFFFFFFF,
+        1px     0       0   #FFFFFFFF,
+        1px     1px     0   #FFFFFFFF,
+        0       1px     0   #FFFFFFFF,
+        -1px    1px     0   #FFFFFFFF,
+        -1px    0       0   #FFFFFFFF;
+}
+
+.form__button button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-image: linear-gradient(to top, var(--myBlue) , var(--myBlue));
+    color: var(--myGray);
+    text-shadow:
+        -1px    -1px    0   var(--myBlue),
+        0       -1px    0   var(--myBlue),
+        1px     -1px    0   var(--myBlue),
+        1px     0       0   var(--myBlue),
+        1px     1px     0   var(--myBlue),
+        0       1px     0   var(--myBlue),
+        -1px    1px     0   var(--myBlue),
+        -1px    0       0   var(--myBlue);
+}
+
+/*===== ESTILOS FOOTER (MOBILE) =====*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--myRed);
+    margin-top: 20px;
+}
+
+/* Elmentos del footer menos la sección de copyright */
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Logo footer */
+.footer__logo{
+    position: absolute;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__logo img{
+    width: 55%;
+}
+
+/* Navegación footer */
+.footer__links{
+    position: relative;
+    z-index: 2;
+}
+
+.footer__links nav ul{
+    list-style: none;
+    font-family: var(--myTitle);
+    text-align: center;
+}
+
+.footer__links ul li{
+    margin-bottom: 10px;
+}
+
+.footer__links ul li:hover{
+    transform: scale(1.1);
+}
+
+.footer__links ul li a,
+.footer__social p{
+    font-family: var(--myTitle);
+    text-decoration: none;
+    color: var(--myGray);
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: all 0.5;
+    text-align: center;
+}
+
+/* Redes footer */
+.footer__social{
+    position: relative;
+    z-index: 2;
+}
+
+.footer__social div{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social p{
+    margin-top: 10px;
+}
+
+.footer__social a{
+    text-decoration: none;
+    color: var(--myBlue);
+    border-radius: 50%;
+    border: 2px solid var(--myGray);
+    margin: 10px;
+    padding: 15px 18px;
+    background-color: var(--myBlue);
+    transition: all 0.5s;
+}
+
+.footer__social a:hover{
+    transform: translateY(-10px);
+    background-color: var(--myGray);
+    border: 2px solid var(--myBlue);
+}
+
+.footer__social a i{
+    font-size: 2rem;
+    color: var(--myGray);
+    transition: all 0.5s;
+}
+
+.footer__social a:hover i{
+    color: var(--myBlue);
+}
+
+
+.footer__social a img{
+    width: 3vw;
+    margin: 10px;
+    transition: all 0.5;
+}
+
+.footer__social a img:hover{
+    transform: scale(1.1);
+}
+
+/* Copyright del footer */
+.footer__copyright{
+    text-align: center;
+    color: var(--myGray);
+    font-family: var(--myTitle);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/*===== ESTILOS MOBILE (OTHERS) =====*/
+@media only screen and (min-width: 480px){
+
+    /*===== ESTILOS NAV (MOBILE - OTHERS) =====*/
+
+    /* Logo */
+    .header__nav a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__nav a img{
+        width: 40%;
+    }
+
+    /* Barra de navegación */
+    .header__nav ul{
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header__nav ul li a{
+        margin: 0;
+    }
+
+    .header__nav ul li{
+        border-bottom: none;
+        border-bottom: 1px solid transparent;
+    }
+
+    .header__nav ul li a:hover{
+        background-color: transparent;
+        color: var(--myBlue);
+        transform: scale(1.1);
+        border-bottom: 1px solid var(--myBlue);
+    }
+
+    /*===== ESTILOS BANNER (MOBILE - OTHERS) =====*/
+
+    /* Contenedor banner */
+    .main__title{
+        margin: 20px 50px;
+    }
+
+    /* Títulos */
+    .main__title div{
+        width: 90%;
+    }
+
+    /* Títulos de las páginas diferentes al index */
+    .main__title-views div h1{
+        font-size: 15rem;
+    }
+
+    .main__title-views-long div h1{
+        font-size: 10rem;
+    }
+
+    .main__title div h2.main__title-views-back{
+        font-size: 25rem;
+    }
+
+    .main__title div h2.main__title-views-back-long{
+        font-size: 15rem;
+    }
+
+    /* Imagen banner index */
+    .main__title-img{
+        width: 40%;
+    }
+
+    /*===== ESTILOS SECCIÓN PRINCIPAL (MOBILE - OTHERS) =====*/
+
+    /* Contenedor productos + título + botón*/
+    .main__products{
+        margin: 0 40px;
+    }
+
+    /* Contenedor todos los productos*/
+    .main__products-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*===== ESTILOS MÉTODOS DE PAGO (MOBILE - OTHERS) =====*/
+    .main__payment{
+        margin: 0 40px;
+    }
+
+    .main__payment-icons{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /*===== ESTILOS QUIÉNES SOMOS (MOBILE - OTHERS) =====*/
+
+    /* Grid quienes somos */
+    .main__about-us{
+        width: 80%;
+    }
+
+    /*===== ESTILOS CONTÁCTANOS (MOBILE - OTHERS)=====*/
+
+    /* Grid form */
+    .main__form{
+        width: 70%;
+    }
+
+    /*===== ESTILOS FOOTER (MOBILE - OTHERS) =====*/
+
+    /* Logo footer */
+    .footer__logo img{
+        width: 35%;
+    }
+}
+
+/*===== ESTILOS TABLET =====*/
+@media only screen and (min-width: 768px){
+
+    /*===== ESTILOS NAV (TABLET) =====*/
+
+    .header__nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #000000, transparent);
+    }
+
+    /* Logo */
+    .header__nav a{
+        width: 30%;
+        margin: 20px;
+    }
+
+    .header__nav a img{
+        width: 100%;
+    }
+
+    /* Barra de navegación */
+    .header__nav ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    .header__nav ul li a{
+        width: auto;
+        color: var(--myGray);
+    }
+
+    .header__nav ul li a:hover{
+        color: var(--myGray);
+        border-bottom: 1px solid var(--myGray);
+    }
+
+    /*===== ESTILOS BANNER (TABLET) =====*/
+
+    /* Títulos */
+    .main__title div{
+        width: 60%;
+    }
+
+    .main__title div h1{
+        font-size: 4rem;
+    }
+
+    .main__title div h2{
+        font-size: 2rem;
+    }
+
+    /* Contenedor banner páginas diferentes al index */
+    .main__title-views{
+        width: 100%;
+    }
+
+    .main__title-views div{
+        width: 100%;
+    }
+
+    /* Títulos de las páginas diferentes al index */
+    .main__title-views div h1{
+        font-size: 15rem;
+    }
+
+    .main__title div h2.main__title-views-back{
+        font-size: 25rem;
+    }
+
+    .main__title div h2.main__title-views-back-long{
+        font-size: 20rem;
+    }
+
+    /* Imagen banner index */
+    .main__title-img{
+        width: 40%;
+    }
+
+    /* Imagen banner index */
+    .main__title-img{
+        mix-blend-mode: overlay;
+        right: 5px;
+        top: 100px; 
+        width: 38%;
+        opacity: 0.8;
+    }
+
+    .main__title-img-above{
+        display: block;
+        mix-blend-mode: normal;
+        right: 10px;
+        opacity: 1;
+    }
+
+    /*===== ESTILOS SECCIÓN PRINCIPAL (TABLET) =====*/
+    
+    /* Contenedor productos + título + botón*/
+    .main__products{
+        margin: 0 50px;
+    }
+
+    /* Contenedor todos los productos*/
+    .main__products-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Titulos seccion principal index */
+    .main__products h2{
+        font-size: 4rem;
+    }
+
+    /* Elineación diferente para segundo título del index */
+    .main__products-on-sale{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Contenedor todos los productos*/
+    .main__products-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    /* Textos de cada producto */
+    .main__products-container article h3{
+        font-size: 2.5rem;
+    }
+
+    /* Botones "Ver más" */
+    .main__button{
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .main__button a{
+        font-size: 3rem;
+    }
+
+    /*=====ESTILOS HR (TABLET) =====*/
+    hr{
+        width: 85%;
+    }
+
+    /*===== ESTILOS MÉTODOS DE PAGO (TABLET) =====*/
+    .main__payment{
+        margin: 0 50px;
+    }
+
+    .main__payment-icons{
+        width: 50%;
+    }
+
+    .main__payment-icons img{
+        width: 80%;
+    }
+
+    /*===== ESTILOS QUIÉNES SOMOS (TABLET) =====*/
+
+    /* Grid quienes somos */
+    .main__about-us{
+        width: 60%;
+    }
+
+    /*===== ESTILOS CONTÁCTANOS (TABLET)=====*/
+
+    /* Grid form */
+    .main__form{
+        display: grid;
+        grid-template-areas:
+        "reason reason"
+        "name last-name"
+        "email email"
+        "message message"
+        "buttons buttons";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        width: 80%;
+        grid-gap: 15px;
+    }
+
+    /* Botones form */
+
+    .form__button button{
+        width: 30%;
+        font-size: 2.5rem;
+    }
+
+    /*===== ESTILOS FOOTER (TABLET) =====*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color: transparent;
+        background-image: url('../assets/img/footer.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Elmentos del footer menos la sección de copyright */
+    .footer__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Logo footer */
+    .footer__logo{
+        position: static;
+        width: 10%;
+        opacity: 1;
+    }
+
+    .footer__logo img{
+        width: 100%;
+    }
+
+    /* Navegación footer */
+    .footer__links ul li a,
+    .footer__social p{
+        color: var(--myBlue);
+    }
+}
+
+/*===== ESTILOS DESKTOP =====*/
+@media only screen and (min-width: 1024px){
+    
+    /*===== ESTILOS NAV (DESKTOP) =====*/
+    /* Logo */
+    .header__nav a{
+        width: 15%;
+        margin: 0 20px;
+    }
+
+    /*===== ESTILOS BANNER (DESKTOP) =====*/
+
+    /* Títulos */
+    .main__title div{
+        width: 70%;
+    }
+
+    .main__title div h1{
+        font-size: 6rem;
+    }
+
+    .main__title div h2{
+        font-size: 2.5rem;
+    }
+
+    /* Contenedor banner páginas diferentes al index */
+    .main__title-views{
+        width: 100%;
+    }
+
+    .main__title-views div{
+        width: 100%;
+    }
+
+    /* Títulos de las páginas diferentes al index */
+    .main__title-views div h1{
+        font-size: 15rem;
+    }
+
+    .main__title div h2.main__title-views-back{
+        font-size: 40rem;
+    }
+
+    .main__title div h2.main__title-views-back-long{
+        font-size: 25rem;
+    }
+
+    /* Imagen banner index */
+    .main__title-img{
+        width: 25%;
+    }
+
+    .main__title-img-above{
+        right: 15px;
+    }
+
+    /*===== ESTILOS SECCIÓN PRINCIPAL (DESKTOP) =====*/
+
+    /* Titulos seccion principal index */
+    .main__products h2{
+        font-size: 5rem;
+    }
+    
+    /* Contenedor todos los productos*/
+    .main__products-container{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /* Contenedor todos los productos en páginas diferentes al index */
+    .main__products-container-views{
+        grid-row-gap: 100px;
+    }
+
+    /*===== ESTILOS MÉTODOS DE PAGO (DESKTOP) =====*/
+
+    .main__payment-icons{
+        width: 50%;
+    }
+
+    .main__payment-icons img{
+        width: 50%;
+    }
+
+    /*===== ESTILOS QUIÉNES SOMOS (DESKTOP) =====*/
+
+    /* Grid quienes somos */
+    .main__about-us{
+        grid-template-areas:
+        "image content";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100%;
+        width: 80%;
+        margin: 40px auto;
+        align-items: center;
+        grid-column-gap: 40px;
+    }
+
+    /* Texto quienes somos */
+    .main__about-us div p{
+        margin-bottom: 20px;
+    }
+
+    .main__button-about-us{
+        margin: 0;
+    }
+
+    /*===== ESTILOS CONTÁCTANOS (DESKTOP)=====*/
+
+    /* Grid form */
+    .main__form{
+        width: 40%;
+    }
+}

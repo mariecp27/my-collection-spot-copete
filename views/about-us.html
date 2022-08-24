@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" class="html__views">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collection Spot - Sobre nosotros</title>
+    <link rel="shortcut icon" href="../assets/img/logo-small.png" type="image/x-icon">
+    <!-- Font Awesome: Icons -->
+    <script src="https://kit.fontawesome.com/0a3fef0c68.js" crossorigin="anonymous"></script>
+    <!-- Google Font: Bebas Neue, Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- AOS - Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <a href="../index.html">
+                <img src="../assets/img/logo-full.png" alt="Logo del sitio">
+            </a>
+            <ul>
+                <li><a href="./store.html">Tienda</a></li>
+                <li><a href="./new-products.html">Nuevo</a></li>
+                <li><a href="./on-sale-products.html">Ofertas</a></li>
+                <li><a href="./about-us.html">Sobre nosotros</a></li>
+                <li><a href="./contact-us.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section class="main__title main__title-views main__title-views-long">
+            <div>
+                <h1>¿Quiénes somos?</h1>
+                <h2 class="main__title-views-back main__title-views-back-long">¿Quiénes somos?</h2>
+            </div>
+        </section>
+        <section class="main__about-us" data-aos="fade-up">
+            <img src="../assets/img/shop.png" alt="Tienda">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam velit ipsum at commodi unde cum magni illo nam libero consequatur ut totam quae labore, nulla excepturi vitae autem voluptatibus. Voluptas unde eius commodi consectetur quidem distinctio voluptatum praesentium dicta, nemo, quae doloremque impedit vel similique magni iure assumenda sit sunt consequatur placeat perferendis, odio aperiam. Doloribus deleniti ipsa repellendus iure quas voluptas magni totam beatae nihil nulla cum culpa ea praesentium, debitis sapiente odit facere? Voluptatibus, itaque! Obcaecati alias debitis inventore quae odio consectetur et ullam, nihil dolores eos sed, nostrum ipsum dolore iusto. Eligendi modi vero odio dolore accusamus commodi, porro praesentium laborum nulla, quaerat quos. Adipisci minus ullam maiores aliquid maxime autem, molestias, corrupti, hic perferendis possimus deserunt temporibus rerum quae ea aspernatur nesciunt commodi ad repellat. Accusantium dolorum facere aliquam earum minima autem! Eveniet officia officiis incidunt nemo architecto aut expedita, quas, placeat nulla distinctio autem harum temporibus laudantium corporis velit quo unde quam magni eos laboriosam ratione voluptates quos inventore! Officiis corporis minima, maxime quasi dolorum voluptates illum optio expedita, odit rerum quas atque velit earum error ullam nam? Distinctio magni aliquid blanditiis dignissimos necessitatibus odit consectetur, in assumenda suscipit. Debitis repudiandae eius soluta nihil.</p>
+                <div class="main__button main__button-about-us">
+                    <a href="./contact-us.html">Contáctanos <i class="fa-solid fa-circle-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <section class="footer__logo">
+                <img src="../assets/img/logo-small.png" alt="Logo">
+            </section>
+            <section class="footer__links">
+                <nav>
+                    <ul>
+                        <li><a href="./store.html">Tienda</a></li>
+                        <li><a href="./about-us.html">Sobre nosotros</a></li>
+                        <li><a href="./contact-us.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footer__social">
+                <p>Síguenos en redes</p>
+                <div>
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/es/" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="footer__copyright">
+            <p>© 2022 My Collection Spot, todos los derechos reservados</p>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: true, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collection Spot</title>
+    <link rel="shortcut icon" href="./assets/img/logo-small.png" type="image/x-icon">
+    <!-- Font Awesome: Icons -->
+    <script src="https://kit.fontawesome.com/0a3fef0c68.js" crossorigin="anonymous"></script>
+    <!-- Google Font: Bebas Neue, Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- AOS - Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <a href="index.html">
+                <img src="./assets/img/logo-full.png" alt="Logo del sitio">
+            </a>
+            <ul>
+                <li><a href="./views/store.html">Tienda</a></li>
+                <li><a href="./views/new-products.html">Nuevo</a></li>
+                <li><a href="./views/on-sale-products.html">Ofertas</a></li>
+                <li><a href="./views/about-us.html">Sobre nosotros</a></li>
+                <li><a href="./views/contact-us.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section class="main__title">
+            <div>
+                <h1>¡Descubre el mejor lugar para llevar tu colección al siguiente nivel!</h1>
+                <h2>Lleva a tu personaje favorito de la pantalla a tus manos y preserva su magia</h2>
+            </div>
+            <img class="main__title-img" src="./assets/img/batman-banner.png" alt="Banner">
+            <img class="main__title-img main__title-img-above" src="./assets/img/batman-banner.png" alt="Banner">
+        </section>
+        <!-- New products section -->
+        <section class="main__products">
+            <div>
+                <h2 data-aos="fade-up">Nuevos productos</h2>
+            </div>
+            <div class="main__products-container" data-aos="fade-up">
+                <article>
+                    <img src="./assets/img/products/product1.png" alt="Producto">
+                    <h3>Roronoa Zoro</h3>
+                    <h4>One Piece</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product2.png" alt="Producto">
+                    <h3>Batman</h3>
+                    <h4>DC Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product3.png" alt="Producto">
+                    <h3>Joker</h3>
+                    <h4>DC Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product4.png" alt="Producto">
+                    <h3>Deadpool</h3>
+                    <h4>Marvel Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product5.png" alt="Producto">
+                    <h3>Black Panther</h3>
+                    <h4>Marvel Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product11.png" alt="Producto">
+                    <h3>Demogorgon</h3>
+                    <h4>Stranger Things</h4>
+                </article>
+            </div>
+            <div class="main__button" data-aos="fade-up">
+                <a href="./views/new-products.html">Ver más <i class="fa-solid fa-circle-right"></i></a>
+            </div>
+        </section>
+        <hr data-aos="fade-up">
+        <!-- Products on sale section -->
+        <section class="main__products">
+            <div class="main__products-on-sale">
+                <h2 data-aos="fade-up">Productos en oferta</h2>
+            </div>
+            <div class="main__products-container" data-aos="fade-up">
+                <article>
+                    <img src="./assets/img/products/product6.png" alt="Producto">
+                    <h3>Mile Morales</h3>
+                    <h4>Marvel Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product7.png" alt="Producto">
+                    <h3>Iron Man</h3>
+                    <h4>Marvel Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product8.png" alt="Producto">
+                    <h3>Doctor Fate</h3>
+                    <h4>DC Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product9.png" alt="Producto">
+                    <h3>Black Adam</h3>
+                    <h4>DC Comics</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product10.png" alt="Producto">
+                    <h3>Nezuko Kamado</h3>
+                    <h4>Kimetsu no Yaiba</h4>
+                </article>
+                <article>
+                    <img src="./assets/img/products/product12.png" alt="Producto">
+                    <h3>Gimli</h3>
+                    <h4>The Lord Of The Rings</h4>
+                </article>
+            </div>
+            <div class="main__button" data-aos="fade-up">
+                <a href="./views/on-sale-products.html">Ver más <i class="fa-solid fa-circle-right"></i></a>
+            </div>
+        </section>
+        <hr data-aos="fade-up">
+        <!-- Payment methods -->
+        <section class="main__payment">
+            <div class="main__payment-title">
+                <h2 data-aos="fade-up">Envíos a toda Colombia</h2>
+            </div>
+            <div class="main__payment-icons" data-aos="fade-up">
+                <img src="./assets/img/payment-method/AE.svg" alt="American Express">
+                <img src="./assets/img/payment-method/MC.svg" alt="Mastercard">
+                <img src="./assets/img/payment-method/PSE.svg" alt="PSE">
+                <img src="assets/img/payment-method/VISA.svg" alt="Visa">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <section class="footer__logo">
+                <img src="./assets/img/logo-small.png" alt="Logo">
+            </section>
+            <section class="footer__links">
+                <nav>
+                    <ul>
+                        <li><a href="./views/store.html">Tienda</a></li>
+                        <li><a href="./views/about-us.html">Sobre nosotros</a></li>
+                        <li><a href="./views/contact-us.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footer__social">
+                <p>Síguenos en redes</p>
+                <div>
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/es/" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="footer__copyright">
+            <p>© 2022 My Collection Spot, todos los derechos reservados</p>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: true, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
+</body>
+</html>
