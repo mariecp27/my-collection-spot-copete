@@ -18,7 +18,7 @@
 /* Permite controlar el tamaño de fuente en rem: 1rem = 10px y fondo de la página*/
 html{
     font-size: 62.5%;
-    width: auto;
+    max-width: 100vw;
     min-height: 100vh;
     background-image: url('../assets/img/background.svg');
     background-repeat: no-repeat;
@@ -103,6 +103,7 @@ html{
 .main__title-views{
     height: 30vh;
     width: 100%;
+    margin: 0;
 }
 
 .main__title-views div{
@@ -160,10 +161,8 @@ html{
     font-size: 10rem;
 }
 
-
 .main__title-views-long div h1{
     font-size: 7rem;
-    margin: 0 10px;
 }
 
 .main__title div h2.main__title-views-back{
@@ -194,7 +193,7 @@ html{
 /* Imagen banner index */
 .main__title-img{
     position: absolute;
-    right: -10%;
+    right: 0;
     width: 60%;
     animation: change 5s infinite alternate;
     z-index: -1;
@@ -717,6 +716,15 @@ footer{
     /* Títulos */
     .main__title div{
         width: 90%;
+    }
+
+    /* Contenedor banner páginas diferentes al index */
+    .main__title-views{
+        margin: 0;
+    }
+
+    .main__title-views div{
+        width: 100%;
     }
 
     /* Títulos de las páginas diferentes al index */
